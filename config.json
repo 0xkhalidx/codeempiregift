@@ -1,0 +1,45 @@
+{
+  "serverName": "TEST",
+  "discordLink": "https://discord.gg/yourdiscordlink",
+  "typingTexts": [
+    "Welcome To {serverName}",
+    "Best PvP Server", 
+    "Join Our Discord /"
+  ],
+  "logos": {
+    "navbar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46",
+    "home": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+  },
+  "buttons": {
+    "joinButton": {
+      "text": "Join {serverName}",
+      "link": "https://discord.gg/yourdiscordlink",
+      "icon": "🐌"
+    }
+  },
+  "navigation": {
+    "menuItems": [
+      {
+        "text": "Home",
+        "href": "#home"
+      },
+      {
+        "text": "Founders", 
+        "href": "#founders"
+      }
+    ]
+  },
+  "seo": {
+    "description": "Welcome to {serverName} - The best PvP server with amazing community and features. Join our Discord today!",
+    "keywords": "{serverName}, PvP server, gaming, community, Discord, multiplayer",
+    "author": "vKhalid",
+    "ogTitle": "{serverName} - Best PvP Server",
+    "ogDescription": "Join {serverName} - The ultimate PvP gaming experience with amazing community and features!",
+    "ogImage": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46",
+    "twitterTitle": "{serverName} - Best PvP Server",
+    "twitterDescription": "Join {serverName} - The ultimate PvP gaming experience with amazing community and features!",
+    "twitterImage": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46",
+    "favicon": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46",
+    "appleTouchIcon": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+  }
+} 

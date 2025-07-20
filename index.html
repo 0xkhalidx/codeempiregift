@@ -1,0 +1,1227 @@
+<!--
+    Made by vKhalid
+    Discord: https://discord.gg/f69pqxVW2Y
+    Github: https://github.com/qg.l
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title"></title>
+    <meta name="description" id="page-description" content="">
+    <meta name="keywords" id="page-keywords" content="">
+    <meta name="author" id="page-author" content="">
+    <meta property="og:title" id="og-title" content="">
+    <meta property="og:description" id="og-description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" id="og-image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="">
+    <meta name="twitter:description" id="twitter-description" content="">
+    <meta name="twitter:image" id="twitter-image" content="">
+    <link rel="icon" type="image/x-icon" id="favicon" href="">
+    <link rel="apple-touch-icon" id="apple-touch-icon" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Rajdhani:wght@700&family=Exo+2:wght@900&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+
+        body {background-color: #000000;font-family: 'Arial', sans-serif;margin: 0;padding: 0;scroll-behavior: smooth;}
+
+        ::-webkit-scrollbar {width: 0 !important;height: 0 !important;background: transparent !important;}
+
+        ::-webkit-scrollbar-track {background: transparent !important;border: none !important;width: 0 !important;}
+
+        ::-webkit-scrollbar-thumb {background: transparent !important;border-radius: 0 !important;border: none !important;width: 0 !important;}
+
+        ::-webkit-scrollbar-thumb:hover {background: transparent !important;}
+
+        ::-webkit-scrollbar-corner {background: transparent !important;width: 0 !important;}
+
+        ::-webkit-scrollbar-button {display: none !important;width: 0 !important;height: 0 !important;}
+
+        ::-webkit-scrollbar-track-piece {background: transparent !important;border: none !important;width: 0 !important;}
+
+        html {scrollbar-width: none !important;-ms-overflow-style: none !important;overflow-x: hidden;}
+
+        body {scrollbar-width: none !important;-ms-overflow-style: none !important;overflow-x: hidden;}
+
+        * {scrollbar-width: none !important;-ms-overflow-style: none !important;}
+
+        html, body {max-width: 100%;overflow-x: hidden;overflow-y: auto;}
+
+
+        body::before {content: '';position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: repeating-linear-gradient(45deg,transparent,transparent 2px,
+                    rgba(0, 123, 255, 0.03) 2px,
+                    rgba(0, 123, 255, 0.03) 4px);
+                    pointer-events: none;}
+
+        .nav-container {
+            position: fixed;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0e0e0eb9;
+            border-radius: 20px;
+            padding: 30px 40px;
+            border: 1px solid rgba(0, 123, 255, 0.103);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 90vw;
+            width: 50vw;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .discord-button {
+            background-color: #00000000;
+            border: none;
+            color: white;
+            border: #363636 1px solid;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .discord-button:hover {
+            transform: translateY(-1px);
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #acabab;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+
+
+        .nav-menu li a:hover {
+            color: #fcf7f7;
+            transform: translateY(-3px);
+        }
+
+        .nav-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(-50%);
+        }
+
+        .nav-menu li a:hover::after {
+            width: 90%;
+        }
+
+        .section-transition {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .section-transition.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            position: relative;
+            z-index: 10;
+        }
+
+        .home-layout {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 2450px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .left-section {
+            flex: 2;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .home-logo {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+           
+                        transform: perspective(1000px) rotateY(-10deg) rotateX(10deg) scale(1.05);
+                }
+
+        .home-logo:hover {
+            transform: perspective(1000px) rotateY(-10deg) rotateX(10deg) scale(1.1);
+          
+        }
+
+    
+
+
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-menu li a.active {
+            color: #007bff;
+        }
+
+        .nav-menu li a.active::after {
+            width: 90%;
+        }
+
+        .join-fivem-button {
+            background: linear-gradient(135deg, #007bff21, #080808ad);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Exo 2', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .join-fivem-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .join-fivem-button:hover::before {
+            left: 0;
+        }
+
+        .join-fivem-button:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+       
+
+
+        .content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .typing-title {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: white;
+            font-family: 'Orbitron', monospace;
+            text-align: left;
+            margin-bottom: 25px;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            letter-spacing: 3px;
+            max-width: 900px;
+            line-height: 1.1;
+        }
+
+        .join-fivem-button {
+            background: linear-gradient(135deg, #007bff21, #080808ad);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Russo One', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .join-fivem-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .snail-icon {
+            font-size: 20px;
+        }
+
+        .about-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            padding-bottom: 120px;
+            text-align: center;
+            color: white;
+            opacity: 1;
+            transform: translateY(0);
+            position: relative;
+            z-index: 10;
+        }
+
+        .about-title {
+            font-size: 5.5rem;
+            font-weight: 900;
+            font-family: 'Orbitron', monospace;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+            line-height: 1.1;
+        }
+
+
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            height: 3rem;
+            background-color: #007bff;
+            margin-left: 5px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 9000px;
+            pointer-events: none;
+            z-index: 0;
+            background-image: 
+                linear-gradient(rgba(0, 123, 255, 0.15) 2px, transparent 2px),
+                linear-gradient(90deg, rgba(0, 123, 255, 0.15) 2px, transparent 2px);
+            background-size: 250px 250px;
+            opacity: 0.4;
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .grid-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background-image: 
+                linear-gradient(rgba(0, 123, 255, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 123, 255, 0.08) 1px, transparent 1px);
+            background-size: 200px 400px;
+            opacity: 0.6;
+        }
+
+        .light-effect {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 700px;
+            pointer-events: none;
+            z-index: 1;
+            background: linear-gradient(
+                to top,
+                rgba(0, 123, 255, 0.404) 0%,
+                rgba(0, 123, 255, 0.1) 50%,
+                rgba(0, 123, 255, 0.05) 80%,
+                transparent 100%
+            );
+            transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0.3;
+        }
+
+
+
+        .grid-background {
+            animation: none;
+        }
+
+        .light-effect {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 15px 20px;
+                gap: 15px;
+                top: 10px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+
+            .nav-menu li a {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+
+            .home-layout {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .left-section {
+                text-align: center;
+                align-items: center;
+                flex: 1;
+            }
+
+            .right-section {
+                justify-content: center;
+            }
+
+            .home-logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .typing-title {
+                font-size: 3rem;
+                min-height: 100px;
+                letter-spacing: 2px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .about-title {
+                font-size: 4rem;
+                letter-spacing: 3px;
+                line-height: 1.2;
+            }
+
+            .light-effect {
+                height: 500px;
+            }
+
+            .grid-background {
+                height: 600px;
+            }
+
+
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 10px 15px;
+                gap: 10px;
+                flex-direction: column;
+            }
+
+            .nav-menu {
+                gap: 10px;
+            }
+
+            .nav-menu li a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .logo {
+                width: 35px;
+                height: 35px;
+            }
+
+            .home-layout {
+                gap: 20px;
+            }
+
+            .home-logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .typing-title {
+                font-size: 2rem;
+                min-height: 80px;
+                letter-spacing: 1px;
+            }
+
+            .about-title {
+                font-size: 3rem;
+                letter-spacing: 2px;
+                line-height: 1.3;
+            }
+
+            .light-effect {
+                height: 400px;
+            }
+
+            .grid-background {
+                height: 500px;
+            }
+
+        }
+
+        @media (max-width: 320px) {
+            .nav-container {
+                padding: 8px 10px;
+            }
+
+            .nav-menu li a {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+
+            .typing-title {
+                font-size: 1.2rem;
+                min-height: 60px;
+            }
+
+            .about-title {
+                font-size: 2.5rem;
+                letter-spacing: 1px;
+                line-height: 1.4;
+            }
+        }
+
+        .footer {
+            background: #222222;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            z-index: 100;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Russo One', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .footer-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+            border-radius: 6px;
+        }
+
+        .footer-link:hover::before {
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 15px 0;
+            }
+
+            .footer-link {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                padding: 12px 0;
+            }
+
+            .footer-link {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }
+
+        .team-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .team-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 30px;
+            font-family: 'Russo One', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 86, 179, 0.2));
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 2px solid rgba(0, 123, 255, 0.3);
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .team-member.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .team-member:hover::before {
+            left: 0;
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .team-member:hover .member-avatar {
+            border-color: rgba(0, 123, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .team-member:hover .avatar-img {
+            transform: scale(1.1);
+        }
+
+        .member-info {
+            margin-top: 15px;
+        }
+
+        .member-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 8px;
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .member-role {
+            font-size: 1rem;
+            color: #007bff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+
+            .team-title {
+                font-size: 2rem;
+            }
+
+            .member-avatar {
+                width: 100px;
+                height: 100px;
+            }
+
+            .member-name {
+                font-size: 1.2rem;
+            }
+
+            .member-role {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .team-title {
+                font-size: 1.8rem;
+            }
+
+            .member-avatar {
+                width: 80px;
+                height: 80px;
+            }
+
+            .member-name {
+                font-size: 1.1rem;
+            }
+
+            .member-role {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <img src="" alt="Server Logo" class="logo" id="navbar-logo">
+        <ul class="nav-menu" id="nav-menu">
+        </ul>
+        <a href="" class="discord-button" id="discord-button" target="_blank">Discord</a>
+    </nav>
+
+    <div class="light-effect"></div>
+    
+                    <div class="content" id="home">
+            <div class="home-layout">
+                <div class="left-section">
+                    <div class="typing-title" id="typing-title">
+                        <span id="typing-text"></span><span class="cursor"></span>
+                    </div>
+                                <a href="" class="join-fivem-button" id="join-button">
+                <span class="snail-icon" id="join-icon">🐌</span>
+                <span id="join-text">Join </span>
+            </a>
+                </div>
+                
+                <div class="right-section">
+                    <img src="" alt="Server Logo" class="home-logo" id="home-logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section" id="founders">
+            <h1 class="about-title">Owners & Founders</h1>
+            <div class="about-line"></div>
+            <div class="about-content" id="teams-container">
+            </div>
+        </div>
+        
+        <div class="grid-background"></div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <a href="https://discord.gg/codeempire" target="_blank" class="footer-link">
+                    Made By CodeEmpire
+                </a>
+            </div>
+        </footer>
+
+      
+
+        <script>
+
+console.log("%cWebsite Made By vKhalid", "color: #007bff; font-size: 24px; font-weight: bold; text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);");
+console.log("%cDiscord: https://discord.gg/f69pqxVW2Y", "color: #007bff; font-size: 18px; font-weight: bold;");
+
+            let texts = [];
+            
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typingText = document.getElementById('typing-text');
+            const cursor = document.querySelector('.cursor');
+            typingText.textContent = texts[0];
+    
+            function typeText() {
+                const currentText = texts[textIndex];
+                if (isDeleting) {
+                    typingText.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingText.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                let typeSpeed = isDeleting ? 100 : 200;
+                
+                if (!isDeleting && charIndex === currentText.length) {
+                    typeSpeed = 2000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typeSpeed = 500;
+                }
+                
+                setTimeout(typeText, typeSpeed);
+            }
+            
+            function startTypingAnimation() {
+                typingText.textContent = texts[0];
+                setTimeout(typeText, 3000);
+            }
+
+            function updateMetaTags(config) {
+                const pageDescription = document.getElementById('page-description');
+                const pageKeywords = document.getElementById('page-keywords');
+                const pageAuthor = document.getElementById('page-author');
+                if (pageDescription && config.seo?.description) {
+                    pageDescription.content = config.seo.description.replace(/{serverName}/g, config.serverName);
+                }
+                if (pageKeywords && config.seo?.keywords) {
+                    pageKeywords.content = config.seo.keywords.replace(/{serverName}/g, config.serverName);
+                }
+                if (pageAuthor && config.seo?.author) {
+                    pageAuthor.content = config.seo.author;
+                }
+                
+                const ogTitle = document.getElementById('og-title');
+                const ogDescription = document.getElementById('og-description');
+                const ogImage = document.getElementById('og-image');
+                
+                if (ogTitle && config.seo?.ogTitle) {
+                    ogTitle.content = config.seo.ogTitle.replace(/{serverName}/g, config.serverName);
+                }
+                if (ogDescription && config.seo?.ogDescription) {
+                    ogDescription.content = config.seo.ogDescription.replace(/{serverName}/g, config.serverName);
+                }
+                if (ogImage && config.seo?.ogImage) {
+                    ogImage.content = config.seo.ogImage;
+                }
+                
+                const twitterTitle = document.getElementById('twitter-title');
+                const twitterDescription = document.getElementById('twitter-description');
+                const twitterImage = document.getElementById('twitter-image');
+                if (twitterTitle && config.seo?.twitterTitle) {
+                    twitterTitle.content = config.seo.twitterTitle.replace(/{serverName}/g, config.serverName);
+                }
+                if (twitterDescription && config.seo?.twitterDescription) {
+                    twitterDescription.content = config.seo.twitterDescription.replace(/{serverName}/g, config.serverName);
+                }
+                if (twitterImage && config.seo?.twitterImage) {
+                    twitterImage.content = config.seo.twitterImage;
+                }
+                const favicon = document.getElementById('favicon');
+                const appleTouchIcon = document.getElementById('apple-touch-icon');
+                
+                if (favicon && config.seo?.favicon) {
+                    favicon.href = config.seo.favicon;
+                }
+                if (appleTouchIcon && config.seo?.appleTouchIcon) {
+                    appleTouchIcon.href = config.seo.appleTouchIcon;
+                }
+            }
+
+            async function loadConfig() {
+                try {
+                    const response = await fetch('config.json');
+                    const config = await response.json();
+                    const serverName = config.serverName;
+                    texts = config.typingTexts.map(text => 
+                        text.replace(/{serverName}/g, serverName)
+                    );
+                    
+                    startTypingAnimation();
+                    
+                    const navbarLogo = document.getElementById('navbar-logo');
+                    const homeLogo = document.getElementById('home-logo');
+                    if (navbarLogo) navbarLogo.src = config.logos.navbar;
+                    if (homeLogo) homeLogo.src = config.logos.home;
+                    const joinButton = document.getElementById('join-button');
+                    const joinIcon = document.getElementById('join-icon');
+                    const joinText = document.getElementById('join-text');
+                    if (joinButton) joinButton.href = config.buttons.joinButton.link;
+                    if (joinIcon) joinIcon.textContent = config.buttons.joinButton.icon;
+                    if (joinText) joinText.textContent = config.buttons.joinButton.text.replace(/{serverName}/g, serverName);
+                    const pageTitle = document.getElementById('page-title');
+                    if (pageTitle) pageTitle.textContent = serverName;
+                    const navbarLogoAlt = document.getElementById('navbar-logo');
+                    const homeLogoAlt = document.getElementById('home-logo');
+                    if (navbarLogoAlt) navbarLogoAlt.alt = `${serverName} Logo`;
+                    if (homeLogoAlt) homeLogoAlt.alt = `${serverName} Logo`;
+                    const discordButton = document.getElementById('discord-button');
+                    if (discordButton) discordButton.href = config.discordLink;
+                    const navMenu = document.getElementById('nav-menu');
+                    if (navMenu) {
+                        navMenu.innerHTML = config.navigation.menuItems.map(item => 
+                            `<li><a href="${item.href}">${item.text}</a></li>`
+                        ).join('');
+                    }
+                    
+                    updateMetaTags(config);
+                    
+                } catch (error) {
+                    console.error('Error loading config:', error);
+                }
+            }
+
+            async function loadTeamData() {
+                try {
+                    const response = await fetch('owners.json');
+                    const data = await response.json();
+                    displayTeams(data.teams);
+                } catch (error) {
+                    console.error('Error loading team data:', error);
+                }
+            }
+
+            function displayTeams(teams) {
+                const container = document.getElementById('teams-container');
+                if (!container) return;
+
+                teams.forEach(team => {
+                    const teamSection = document.createElement('div');
+                    teamSection.className = 'team-section';
+                    
+                    teamSection.innerHTML = `
+                        <h2 class="team-title">${team.title}</h2>
+                        <div class="team-grid">
+                            ${team.members.map(member => `
+                                <div class="team-member">
+                                    <div class="member-avatar">
+                                        <img src="${member.avatar}" alt="${member.name}" class="avatar-img">
+                                    </div>
+                                    <div class="member-info">
+                                        <div class="member-name">${member.name}</div>
+                                        <div class="member-role">${member.role}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                    
+                    container.appendChild(teamSection);
+                });
+
+                const newTeamMembers = container.querySelectorAll('.team-member');
+                const teamObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry, index) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, index * 200);
+                        }
+                    });
+                }, {
+                    threshold: 0.3,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                newTeamMembers.forEach(member => {
+                    teamObserver.observe(member);
+                });
+            }
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    const sections = document.querySelectorAll('.about-section');
+                    const aboutBoxes = document.querySelectorAll('.about-box');
+                    const navLinks = document.querySelectorAll('.nav-menu li a');
+                
+
+                
+                setTimeout(() => {
+                    aboutBoxes.forEach((box, index) => {
+                        setTimeout(() => {
+                            box.classList.add('visible');
+                        }, 300 + (index * 200));
+                    });
+                }, 1500);
+                
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetSection = document.getElementById(targetId);
+                        
+                        if (targetSection) {
+                            navLinks.forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+                            const currentScroll = window.pageYOffset;
+                            const targetScroll = targetSection.offsetTop - 120; 
+                            const distance = targetScroll - currentScroll;
+                            
+                            const duration = 1500;
+                            const startTime = performance.now();
+                            
+                            function smoothScroll(currentTime) {
+                                const elapsed = currentTime - startTime;
+                                const progress = Math.min(elapsed / duration, 1);
+                                
+                                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                                
+                                const newScroll = currentScroll + (distance * easeOutCubic);
+                                window.scrollTo(0, newScroll);
+                                
+                                if (progress < 1) {
+                                    requestAnimationFrame(smoothScroll);
+                                }
+                            }
+                            
+                            requestAnimationFrame(smoothScroll);
+                        }
+                    });
+                });
+                
+                let scrollTicking = false;
+                window.addEventListener('scroll', () => {
+                    if (!scrollTicking) {
+                        requestAnimationFrame(() => {
+                            const scrollPos = window.scrollY + 200;
+                            
+                            sections.forEach(section => {
+                                const sectionTop = section.offsetTop;
+                                const sectionHeight = section.offsetHeight;
+                                const sectionId = section.id;
+                                
+                                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                                    navLinks.forEach(link => link.classList.remove('active'));
+                                    const activeLink = document.querySelector(`[href="#${sectionId}"]`);
+                                    if (activeLink) {
+                                        activeLink.classList.add('active');
+                                    }
+                                }
+                            });
+                            scrollTicking = false;
+                        });
+                        scrollTicking = true;
+                    }
+                });
+                
+
+                let ticking = false;
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        requestAnimationFrame(() => {
+                            const scrolled = window.pageYOffset;
+                            const parallaxElements = document.querySelectorAll('.grid-background');
+                            
+                            parallaxElements.forEach(element => {
+                                const speed = 0.5;
+                                element.style.transform = `translateY(${scrolled * speed}px)`;
+                            });
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+                
+                window.addEventListener('load', () => {
+                    document.body.classList.add('loaded');
+                });
+
+                const homeSection = document.getElementById('home');
+                const foundersSection = document.getElementById('founders');
+                const lightEffect = document.querySelector('.light-effect');
+                const homeObserver = new IntersectionObserver((entries) => {
+        
+                }, {
+                    threshold: 0.3,
+                    rootMargin: '0px 0px -100px 0px'
+                });
+                
+                const foundersObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            lightEffect.style.opacity = '1';
+                            lightEffect.style.transform = 'translateY(0)';
+                        } else {
+                            setTimeout(() => {
+                                lightEffect.style.opacity = '0.3';
+                            }, 300);
+                        }
+                    });
+                }, {
+                    threshold: 0.3,
+                    rootMargin: '0px 0px -100px 0px'
+                });
+                
+                const middleSections = document.querySelectorAll('.about-section');
+                const middleObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {});
+                }, {
+                    threshold: 0.3,
+                    rootMargin: '0px 0px -100px 0px'
+                });
+
+                if (homeSection) {
+                    homeObserver.observe(homeSection);
+                }
+                
+                if (foundersSection) {
+                    foundersObserver.observe(foundersSection);
+                }
+                
+                middleSections.forEach(section => {
+                    middleObserver.observe(section);
+                });
+
+                loadConfig();
+                loadTeamData();
+            });
+        </script>
+    </body>
+    </html>

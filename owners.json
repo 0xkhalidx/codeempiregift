@@ -1,0 +1,49 @@
+{
+  "teams": [
+    {
+      "title": "Owners",
+      "members": [
+        {
+          "name": "Owner 1",
+          "role": "Server Owner",
+          "avatar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+        },
+        {
+          "name": "Owner 2",
+          "role": "Server Owner",
+          "avatar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+        }
+      ]
+    },
+    {
+      "title": "Founders",
+      "members": [
+        {
+          "name": "Founder 1",
+          "role": "Server Founder",
+          "avatar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+        },
+        {
+          "name": "Founder 2",
+          "role": "Server Founder",
+          "avatar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+        }
+      ]
+    },
+    {
+      "title": "Team",
+      "members": [
+        {
+            "name": "Team 1",
+            "role": "Team Member",
+            "avatar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+          },
+          {
+            "name": "Team 2",
+            "role": "Team Member",
+            "avatar": "https://scontent.fjed4-1.fna.fbcdn.net/v/t1.6435-9/39821240_532282543867795_4793606968931516416_n.png?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Xfpfww0DOK4Q7kNvwHtxroU&_nc_oc=Adk88woY6KrOFgEw_laysaZizO31zBw3TflA21IN5m_xsK7O1BS8uVr95eCsPj6IGxlW3xlQPnBi4knkeKJrdKpH&_nc_zt=23&_nc_ht=scontent.fjed4-1.fna&_nc_gid=8a0BoNgdFCZhOF7UTQJpYA&oh=00_AfRO7uNwg5md-wbNNhXBeJ-eBZTHvcWHQ9MXq5u2rM-d6g&oe=68A3BB46"
+          }
+      ]
+    }
+  ]
+} 
